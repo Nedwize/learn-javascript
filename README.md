@@ -16,3 +16,7 @@
 - AST (Abstract Syntax Trees) (astexplorer.net)
 - Interpreter
 - Optimised Code
+
+### But what is ECMASCRIPT?
+
+- ECMASCRIPT is the standard version of JS that engines must adhere to for interoperability of web pages across different browsers.
