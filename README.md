@@ -20,3 +20,9 @@
 ### But what is ECMASCRIPT?
 
 - ECMASCRIPT is the standard version of JS that engines must adhere to for interoperability of web pages across different browsers.
+
+### Interpreter vs Compiler
+
+A compiler will compile down the source code to Machine Code and use that piece of binary whenever the code needs to run. A compiler is essentially a piece of code which takes one language and converts it into another.
+
+An interpreter on the other hand will take every line one by one and convert it into machine code.
