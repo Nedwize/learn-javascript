@@ -32,3 +32,8 @@ Compilation is generally faster because repeated portions of code can be directl
 A compiler can also be slower as it has to compile down to machine code first.
 
 Using the best of both worlds, an interpreter's ability to run code line by line and compiler's ability to optimise, we built the JIT (Just In Time Compiler)
+
+- V8 takes in source code and spits out BYTECODE, this is known as ignition.
+- A profiler looks out for optimisations and iterations.
+- If the profiler finds some pieces of code which are repeated, they are passed down to the compiler. They constantly make updates to optimise the code.
+- The compiler for V8 is called TurboFan
