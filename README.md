@@ -37,3 +37,9 @@ Using the best of both worlds, an interpreter's ability to run code line by line
 - A profiler looks out for optimisations and iterations.
 - If the profiler finds some pieces of code which are repeated, they are passed down to the compiler. They constantly make updates to optimise the code.
 - The compiler for V8 is called TurboFan
+
+### Call Stack and Memory Heap
+
+#### Memory Heap
+
+- Memory heap stores the data of our app. The variables, objects all these are stored in the Memory Heap. This is where the memory allocation happens.
