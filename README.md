@@ -43,3 +43,9 @@ Using the best of both worlds, an interpreter's ability to run code line by line
 #### Memory Heap
 
 - Memory heap stores the data of our app. The variables, objects all these are stored in the Memory Heap. This is where the memory allocation happens.
+
+#### Call Stack
+
+- Call stack actually keeps a track of what is happening line by line in a program. This is where the engine keeps track of where the code is in it's execution.
+
+- The main function of our file is called the Global Execution Context.
