@@ -49,3 +49,7 @@ Using the best of both worlds, an interpreter's ability to run code line by line
 - Call stack actually keeps a track of what is happening line by line in a program. This is where the engine keeps track of where the code is in it's execution.
 
 - The main function of our file is called the Global Execution Context.
+
+- The call stack stores function calls and variables in a stack data structure. The stack frame is the current status of the which allows us to know the where we are in the code.
+
+Note: Where variables are located is not 100% the same everytime. So, for now we can think about it this way, simple variables are stored in the call stack and complex data structures like objects and arrays are stored in the memory heap. _We will revisit it later._
