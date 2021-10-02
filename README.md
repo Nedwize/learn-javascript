@@ -53,3 +53,13 @@ Using the best of both worlds, an interpreter's ability to run code line by line
 - The call stack stores function calls and variables in a stack data structure. The stack frame is the current status of the which allows us to know the where we are in the code.
 
 Note: Where variables are located is not 100% the same everytime. So, for now we can think about it this way, simple variables are stored in the call stack and complex data structures like objects and arrays are stored in the memory heap. _We will revisit it later._
+
+Algorithm for Garbage collection in JS - Mark and Sweep
+
+3 ways memory leaks happen in JS
+
+**#1** Global Variables
+
+**#2** Uncleared Event Listeners
+
+**#3** Uncleared setInterval
