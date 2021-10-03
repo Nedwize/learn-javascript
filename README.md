@@ -63,3 +63,11 @@ Algorithm for Garbage collection in JS - Mark and Sweep
 **#2** Uncleared Event Listeners
 
 **#3** Uncleared setInterval
+
+### The JavaScript Runtime
+
+- The JS runtime constitutes the JS Engine, Web API and the Event Loop
+
+#### Web APIs
+
+- Every browser contains a set of web apis to support asynchronous HTTP requests, listen to DOM events, etc.
