@@ -71,3 +71,7 @@ Algorithm for Garbage collection in JS - Mark and Sweep
 #### Web APIs
 
 - Every browser contains a set of web apis to support asynchronous HTTP requests, listen to DOM events, etc.
+
+- setInterval, setTimeout and fetch are all part of the web api. (Console the window object)
+
+**JavaScript is Single Threaded, it has one Call Stack.**
