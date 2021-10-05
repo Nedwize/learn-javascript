@@ -75,3 +75,9 @@ Algorithm for Garbage collection in JS - Mark and Sweep
 - setInterval, setTimeout and fetch are all part of the web api. (Console the window object)
 
 **JavaScript is Single Threaded, it has one Call Stack.**
+
+### Event Loop
+
+- The event loop only inserts a call from the callback queue once the call stack is empty. So if the call stack is busy, the event loop does not insert anything in the stack.
+
+- Node.js allows us to have the same model of a single threaded language but any asynchronous task can be non blocking, that means that they are passed to worker threads in the background to do the work for us and then get sent back through the callback queue and the event loop to the stack.
