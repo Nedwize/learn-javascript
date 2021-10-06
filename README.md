@@ -95,3 +95,28 @@ Algorithm for Garbage collection in JS - Mark and Sweep
 - Execution Context tells you which lexical environment is currently running.
 
 - In JS, our lexical scope (available data + variables where the function was defined) determines our available variables. Not where the function is called (Dynamic Scope)
+
+- Consider two pieces of code
+
+```javascript
+a = 2;
+
+var a;
+
+console.log(a);
+
+// Output = 2
+
+console.log(a);
+
+var a = 2;
+
+// You would expect the output to be ReferenceError or the integer 2
+// But the output will be undefined
+```
+
+- Remember the compiler engine and scopes conversation from Kyle Simpson's YDKJS. When you see `var a = 2;`, you probably think of that as one statement. But JavaScript actually thinks of it as two statements: `var a;` and `a = 2;`. The first statement, the declaration, is processed during the compilation phase. The second statement, the assignment, is left in place for the execution phase.
+
+- The two phases are **Compilation** and **Execution** Phase.
+
+- **Function declarations** are hoisted, as we just saw. But **function expressions are not**.
