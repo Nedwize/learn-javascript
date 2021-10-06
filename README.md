@@ -120,3 +120,29 @@ var a = 2;
 - The two phases are **Compilation** and **Execution** Phase.
 
 - **Function declarations** are hoisted, as we just saw. But **function expressions are not**.
+
+- For Eg. the first snippet is hoisted and the second one is not.
+
+```javascript
+foo();
+
+function foo() {
+  // ...
+}
+```
+
+```javascript
+foo(); // not ReferenceError, but TypeError!
+
+var foo = function bar() {
+  // ...
+};
+```
+
+- Why a _TypeError_ and not a _ReferenceError_ ?
+
+The variable identifier foo is hoisted and attached to the enclosing scope (global) of this program, so foo() doesn't fail as a ReferenceError. But foo has no value yet (as it would if it had been a true function declaration instead of expression). So, foo() is attempting to invoke the undefined value, which is a TypeError illegal operation.
+
+- _Note: Function declarations are hoisted before variables_
+
+- Declarations themselves are hoisted, but assignments, even assignments of function expressions, are not hoisted.
