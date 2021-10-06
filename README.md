@@ -93,3 +93,5 @@ Algorithm for Garbage collection in JS - Mark and Sweep
 - The `Lexical Scope / Environment` is the location of the particular function / variable in the code. Whether it is defined in the Global Context or in some other functions context.
 
 - Execution Context tells you which lexical environment is currently running.
+
+- In JS, our lexical scope (available data + variables where the function was defined) determines our available variables. Not where the function is called (Dynamic Scope)
