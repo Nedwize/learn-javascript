@@ -81,3 +81,15 @@ Algorithm for Garbage collection in JS - Mark and Sweep
 - The event loop only inserts a call from the callback queue once the call stack is empty. So if the call stack is busy, the event loop does not insert anything in the stack.
 
 - Node.js allows us to have the same model of a single threaded language but any asynchronous task can be non blocking, that means that they are passed to worker threads in the background to do the work for us and then get sent back through the callback queue and the event loop to the stack.
+
+### Execution Context
+
+- As soon as the JS Compiler sees the bracket pairs - (). It creates an Execution Context.
+
+- In the creation phase the execution context is created and when we run a new function, a new function execution context is added.
+
+- `this` points to the Global Object or the `window` variable in the browser or the `global` variable in Node.js runtime.
+
+- The `Lexical Scope / Environment` is the location of the particular function / variable in the code. Whether it is defined in the Global Context or in some other functions context.
+
+- Execution Context tells you which lexical environment is currently running.
