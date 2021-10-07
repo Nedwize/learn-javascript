@@ -146,3 +146,39 @@ The variable identifier foo is hoisted and attached to the enclosing scope (glob
 - _Note: Function declarations are hoisted before variables_
 
 - Declarations themselves are hoisted, but assignments, even assignments of function expressions, are not hoisted.
+
+### Elaboration on the Execution Context
+
+1. Creation Phase
+
+   - Creation of the Variable Object
+   - Creation of the scope chain
+   - Determination of the value of `this`
+
+2. Execution Phase
+
+- The code of the function that genearted the current execution context is ran line by line.
+
+### Hoisting
+
+- Code is scanned for function declarations and for each function a property is created in the variable object which points to the actual function.
+
+- Then, code is scanned for variable declarations and for each variable, a property is created in the variable object which is set to `undefined`.
+
+- _Note: Hoisting in functions only works with Function Declarations and not with Function Expressions_
+
+- Eg.
+
+```javascript
+// This will be hoisted and can be used before declaration
+
+function calculateAge(year) {
+  return 2021 - year;
+}
+
+// This func will not be hoisted and cannot be used before expression
+
+var calculateAge = function (year) {
+  return 2021 - year;
+};
+```
