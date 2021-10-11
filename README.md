@@ -182,3 +182,17 @@ var calculateAge = function (year) {
   return 2021 - year;
 };
 ```
+
+- The execution context is created keeping in mind where the functions were called in the code while the scoping chain is created from the lexical analysis of the code, it doesn't care about which order the functions were called in.
+
+### The `this` keyword
+
+- Regular Function Call - the `this` keyword points at the global object
+
+- Method Call - `this` variable points to the object that is calling the method
+
+- The `this` keyword is not assigned a value until the function where it is actually defined is called
+
+#### Closure
+
+- An inner function always has access to the variables and parameters of the outer function, even if it's popped off the call stack and has returned.
